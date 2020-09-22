@@ -1,0 +1,18 @@
+body {
+	font-family: verdana, geneva, arial, sans-serif;
+	font-weight: bold;
+	font-size: small;
+	font-style: normal;
+	color: black;
+}
+
+fieldset{
+	background-color: yellow;
+	width: 350px;
+	height: 180px;
+}
+
+.espacos {	
+	box-sizing: border-box;
+	margin: 15px 15px 15px 15px;
+}

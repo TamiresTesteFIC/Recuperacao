@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<script src="funcoes.js"> </script> 
+		<link rel="stylesheet" href="estilo.css">
+    </head>
+		
+	<body>
+		<fieldset>
+		<legend>MultiCalculadora</legend>
+		
+		<form>
+		
+			<p><input type="radio" name="operacao" value="imc" checked="checked" onclick="exibeIMC();" /> IMC
+			<input type="radio" name="operacao" value="retangulo" onclick="exibeRetangulo();" /> Retângulo
+			<input type="radio" name="operacao" value="circulo" onclick="exibeCirculo();" /> Círculo</p>
+				
+				<div id="divIMC">
+					
+					<div class="espacos">
+						<label for="peso">Peso: </label>
+						<Input type="number" name="peso" id="peso"/>
+					</div>
+										
+					<div class="espacos">
+						<label for="altura">Altura: </label>
+						<Input type="number" name="altura" id="altura"/>
+					</div>
+					
+					<div>
+						<button type="button" onclick="calcularIMC() ;">Calcular</button>
+					</div>
+
+				</div>	
+				
+				<div id="divRet" style="display: none;">
+					
+					<div class="espacos">
+						<label for="baseRetangulo">Base: </label>
+						<Input type="number" name="baseRetangulo" id="baseRetangulo"/>
+					</div>
+					
+					<div class="espacos">
+						<label for="alturaRetangulo">Altura: </label>
+						<Input type="number" name="alturaRetangulo" id="alturaRetangulo"/>
+					</div>
+					
+					<div>
+						<button type="button" onclick="calcularRetangulo() ;">Calcular</button>
+					</div>
+				
+				</div>
+					
+				<div id="divCir" style="display: none;">
+					
+					<div class="espacos">
+						<label for="raioCirculo">Raio: </label>
+						<Input type="number" name="raioCirculo" id="raioCirculo"/>
+					</div>
+							
+					<div class="espacos">
+						<button type="button" onclick="calcularCirculo() ;">Calcular</button>
+					</div>
+					
+				</div>
+		
+		</form>
+	</body>
+</html>
